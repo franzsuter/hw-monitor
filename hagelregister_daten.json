@@ -120,7 +120,7 @@
     },
     "33127": {
         "Bezeichnung": "JKM",
-        "Beschreibung": "Glas-Folien PV-Modul.\nFrontabdeckung ausSolarglasESG, Stärke = 3,2 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.\nDie Anerkennung gilt für folgende PV-Modul Typen: JKM435N-54HL4R-V; JKM435N-54HL4R; JKM425N-54HL4R; JKM425N-54HL4R-V; JKM430N-54HL4R; JKM430N-54HL4R-V; JKM440N-54HL4R; JKM440N-54HL4R-V; JKM445N-54HL4R; JKM445N-54HL4R-V; JKM450N-54HL4R; JKM450N-54HL4R-V; JKM425-54HL4R-B; JKM430-54HL4R-B; JKM435-54HL4R-B; JKM440-54HL4R-B; JKM445-54HL4R-B.",
+        "Beschreibung": "Glas-Folien PV-Modul.\nFrontabdeckung aus Solarglas ESG, Stärke = 3,2 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.\nDie Anerkennung gilt für folgende PV-Modul Typen: JKM435N-54HL4R-V; JKM435N-54HL4R; JKM425N-54HL4R; JKM425N-54HL4R-V; JKM430N-54HL4R; JKM430N-54HL4R-V; JKM440N-54HL4R; JKM440N-54HL4R-V; JKM445N-54HL4R; JKM445N-54HL4R-V; JKM450N-54HL4R; JKM450N-54HL4R-V; JKM425-54HL4R-B; JKM430-54HL4R-B; JKM435-54HL4R-B; JKM440-54HL4R-B; JKM445-54HL4R-B.",
         "Gesuchsteller": "JinkoSolar GmbH, Konrad Zuse Platz 8, 81929 München",
         "Gültig bis": "31.12.2029",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
@@ -183,15 +183,15 @@
     },
     "32193": {
         "Bezeichnung": "LEO-N (L62), LEO-N (L64), LEO-N BLACK (L82), LEO-N BLACK (L84)",
-        "Beschreibung": "Monokristalline Photovoltaikmodule.\nFrontabdeckung aus gehärtetemSolarglas(ESG), Stärke = 3,2 mm\nAbdeckung gelagert in Rahmen aus Aluminium-Profilen eloxiert,\nRahmenhöhe = 40 mm, minimale Rahmenstärke = 1,3 mm.\nAnerkennung gilt für alle Leistungsklassen.",
-        "Gesuchsteller": "aleo solar GmbH, Marius-Eriksen-Strasse 1, 17291 Prenzlau",
+        "Beschreibung": "Monokristalline Photovoltaikmodule.\nFrontabdeckung aus gehärtetem Solarglas (ESG), Stärke = 3,2 mm\nAbdeckung gelagert in Rahmen aus Aluminium-Profilen eloxiert,\nRahmenhöhe = 40 mm, minimale Rahmenstärke = 1,3 mm.\nAnerkennung gilt für alle Leistungsklassen.",
+        "Gesuchsteller": "aleosolar GmbH, Marius-Eriksen-Strasse 1, 17291 Prenzlau",
         "Gültig bis": "31.12.2027",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
     "32219": {
         "Bezeichnung": "LEO-N Sol (S82), LEO-N Sol (S84)",
-        "Beschreibung": "Monokristalline Photovoltaikmodule zur Dachintegration.\nFrontabdeckung aus gehärtetemSolarglas(ESG), Stärke = 3,2 mm.\nAbdeckung gelagert in einem speziellen Rahmen für die Dachintergration.\nRahmen aus Aluminium-Profilen pulverbeschichtet, Rahmenhöhe = 17 mm.\nAnerkennung gilt für alle Leistungsklassen.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
-        "Gesuchsteller": "aleo solar GmbH, Marius-Eriksen-Strasse 1, 17291 Prenzlau",
+        "Beschreibung": "Monokristalline Photovoltaikmodule zur Dachintegration.\nFrontabdeckung aus gehärtetem Solarglas (ESG), Stärke = 3,2 mm.\nAbdeckung gelagert in einem speziellen Rahmen für die Dachintergration.\nRahmen aus Aluminium-Profilen pulverbeschichtet, Rahmenhöhe = 17 mm.\nAnerkennung gilt für alle Leistungsklassen.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
+        "Gesuchsteller": "aleosolar GmbH, Marius-Eriksen-Strasse 1, 17291 Prenzlau",
         "Gültig bis": "31.12.2027",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
     },
@@ -250,132 +250,6 @@
         "Gesuchsteller": "LONGiSolar Technologie GmbH, Platz der Einheit 2, 60327 Frankfurt am Main",
         "Gültig bis": "31.12.2030",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
-    },
-    "31651": {
-        "Bezeichnung": "PV-Modul MAX //Typ:  TPVS, TPVS10, APVS",
-        "Beschreibung": "PV-Modul.\nAbdeckungSolarglas- 3,2 mm.\nDie Anerkennung bezieht sich nur auf den solaren Teil, nicht auf eine allfällige Randabdeckung und die Unterkonstruktion.",
-        "Gesuchsteller": "AGZ Ziegeleien AG, Ziegelei, 6142 Gettnau",
-        "Gültig bis": "31.12.2026",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3  Hagelwiderstand 3"
-    },
-    "31778": {
-        "Bezeichnung": "Smart Modul der Serie SPV und PV",
-        "Beschreibung": "PV-Modul.\nAbdeckungSolarglas- 3,2 mm.\nAbdeckung in Rahmen aus Aluminiumprofil gelagert.\nDie Anerkennung bezieht sich nur auf den solaren Teil, nicht auf eine allfällige Randabdeckung und die Unterkonstruktion.",
-        "Gesuchsteller": "SolarEdge Technologies GmbH, Werner-Eckert-Strasse 6, 81829 München",
-        "Gültig bis": "31.12.2026",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
-    },
-    "31895": {
-        "Bezeichnung": "Photovoltaik Module",
-        "Beschreibung": "Photovoltaikmodule zur Gebäudeintegration.\nAbdeckungSolarglas, Stärke = 3.2 mm.\nDie Anerkennung bezieht sich nur auf den solaren Teil, nicht auf eine allfällige Randabdeckung und die Unterkonstruktion.",
-        "Gesuchsteller": "Solarday, Via Privata Antonio Meucci, 67, 20128 Milano",
-        "Gültig bis": "31.12.2026",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
-    },
-    "31936": {
-        "Bezeichnung": "MEGASLATE II BLACK 6DL 195, MEGASLATE II BLACK 6DQ 155, MEGASLATE II BLACK 6DM 145, MEGASLATE II BLACK 6DS 115",
-        "Beschreibung": "Photovoltaikmodule ohne Rahmen zur Dachintegration.\nGehärtetesSolarglas, Stärke = 5,0 mm,\nBefestigung der Module mit beschichteten Metallhaken.",
-        "Gesuchsteller": "3S Swiss Solar Solutions AG, Schorenstrasse 39, 3645 Gwatt (Thun)",
-        "Gültig bis": "31.12.2027",
-        "Klassierung": "Hagelwiderstand Aussehen: HW 5 | Hagelwiderstand Funktionalität: HW 5"
-    },
-    "31937": {
-        "Bezeichnung": "MEGASLATE II BLACK 6DL 190.ST, MEGASLATE II BLACK 6DQ 150.ST, MEGASLATE II BLACK 6DM 140.ST, MEGASLATE II BLACK 6DS 110.ST",
-        "Beschreibung": "Photovoltaikmodule ohne Rahmen zur Dachintegration.\nGehärtetesSolarglas, Stärke = 5,0 mm,\nBefestigung der Module mit beschichteten Metallhaken.",
-        "Gesuchsteller": "3S Swiss Solar Solutions AG, Schorenstrasse 39, 3645 Gwatt (Thun)",
-        "Gültig bis": "31.12.2027",
-        "Klassierung": "Hagelwiderstand Aussehen: HW 5 | Hagelwiderstand Funktionalität: HW 5"
-    },
-    "31938": {
-        "Bezeichnung": "THERMIEPANEL MSII",
-        "Beschreibung": "Thermiemodul ohne Rahmen zur Dachintegration.\nGehärtetesSolarglas, Stärke = 5,0 mm.\nBefestigung der Module mit beschichteten Metallhaken.\nDie Hagelprüfung wurde mit dem MegaSlate Montagesystem durchgeführt.\nSolar Keymark Nummern: 011-7S1710 F",
-        "Gesuchsteller": "3S Swiss Solar Solutions AG, Schorenstrasse 39, 3645 Gwatt (Thun)",
-        "Gültig bis": "31.12.2027",
-        "Klassierung": "Hagelwiderstand Aussehen: HW 5 | Hagelwiderstand Funktionalität: HW 5"
-    },
-    "32022": {
-        "Bezeichnung": "FK1-H2, FK1-V2",
-        "Beschreibung": "Abdeckung ausSolarglasmatt/matt, Stärke = 3.2 mm.\nRahmen aus Aluminiumprofil mit Glashalteprofil.\nSolar Keymark-Nummer: 011-7S085 F.",
-        "Gesuchsteller": "Ernst Schweizer AG, Bahnhofplatz 11, 8908 Hedingen",
-        "Gültig bis": "31.12.2027",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
-    },
-    "32195": {
-        "Bezeichnung": "Swiss Premium/MATCH/LEVEL Mxx-xx-x GG",
-        "Beschreibung": "Rahmenloses Glas-Glas PV-Modul.\nFrontabdeckung aus gehärtetemSolarglas, Stärke = 3,2 mm.\nRückabdeckung aus gehärtetemSolarglas, Stärke = 3,2 mm.\nBefestigung der Module mit kunststoffbeschichteten Haken aus Aluminium.\n\"Mxx-xx-x\" bezeichnet die verschiedenen Leistungsklassen der Module.",
-        "Gesuchsteller": "Megasol Energie AG, Industriestrasse 3, 4543 Deitingen",
-        "Gültig bis": "31.12.2027",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
-    },
-    "32231": {
-        "Bezeichnung": "VPV P XXX/G M BWF, VPV P XXX/G M BBF",
-        "Beschreibung": "Monokristalline Photovoltaikmodule.\nFrontabdeckung aus gehärtetemSolarglas(ESG), Stärke = 3,2 mm\nAbdeckung gelagert in Rahmen aus Aluminium-Profilen eloxiert,\nRahmenhöhe = 40 mm, minimale Rahmenstärke = 1,3 mm.\nAnerkennung gilt für alle Leistungsklassen.",
-        "Gesuchsteller": "Vaillant GmbH Schweiz, Riedstrasse 12, 8953 Dietikon",
-        "Gültig bis": "31.12.2027",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
-    },
-    "32807": {
-        "Bezeichnung": "SunStyle-Photovoltaik-Dachziegel",
-        "Beschreibung": "Photovoltaik-Dachziegel, rahmenlos.\nAbdeckung aus gehärtetemSolarglas(ESG), Stärke = 6,0 mm\nMasse pro Stück =  870 mm * 870 mm * 7 mm.\nBefestigt mit Sechskantschrauben mit gedichteter Unterlagscheibe auf Unterkonstruktion. Befestigungsbereich geprüft.\nDie Anerkennung gilt für alle Typen (unterschiedliche Zellenanzahl) in den Farben Terracotta, Silver und Blue Marine.",
-        "Gesuchsteller": "SUNSTYLE INTERNATIONAL , 140 Avenue des Champs-Élysées, 75008 Paris",
-        "Gültig bis": "31.12.2028",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
-    },
-    "32931": {
-        "Bezeichnung": "SPR-MAX6-xxx; SPR-MAX6-xxx-BLK; SPR-MAX6-xxx-COM",
-        "Beschreibung": "Monokristalline Photovoltaikmodule.\nAbdeckung aus gehärtetemSolarglas(ESG), Stärke = 3,1 mm.\nAbdeckung gelagert in Rahmen aus Aluminium-Profil. Rahmenhöhe = 40 mm, Rahmenstärke an der tragenden Stelle = 1,5 mm.\nDie Anerkennung gilt für folgende Modultypen: SPR-MAX6-xxx (xxx = 410-445 W, white backsheet, black frame SPR-MAX6-xxx-BLK (xxx = 410-445 W, black backsheet, blackframe SPR-MAX6-xxx-COM (xxx = 435-475 W, white backsheet, silver frame).",
-        "Gesuchsteller": "Maxeon Solar Technologies Ltd., 8 Marina Boulevard, 018981 Singapore",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
-    },
-    "32934": {
-        "Bezeichnung": "SHARP NU-JCserie: NU-JCxxx; NU-JCxxxB",
-        "Beschreibung": "Monokristalline Photovoltaikmodule.\nAbdeckung aus gehärtetemSolarglas(ESG), Stärke = 3,2 mm.\nAbdeckung gelagert in Rahmen aus Aluminium-Profil. Rahmenhöhe = 30 mm, Rahmenstärke an der tragenden Stelle = 1,5 mm.\nxxx beschreibt die Modulleistung in Wp von 410 W bis 440W (NU-JCserie) bzw. die Modulleistung in Wp von 410 W bis 435 W (NU-JCxxxB). Anerkennung gilt für alle Leistungsklassen.",
-        "Gesuchsteller": "SHARP Electronics GmbH, Nagelsweg  - 35 33, 20097 Hamburg",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
-    },
-    "32935": {
-        "Bezeichnung": "KPV ML NEC 330Wp; KPV ML NEC 165Wp 1659x560 Soltop V3; KPV ML NEC 130Wp 715x1020 Soltop V3",
-        "Beschreibung": "Glas/Folie-Laminat mit gehärtetem, eisenarmen 4 mmSolarglas.\nDie Anerkennung VKF Hagelschutz bezieht sich nur auf den solaren Teil,\nnicht auf die Abdeckprofile, Spenglereinfassungen und die Unterkonstruktion.",
-        "Gesuchsteller": "SOLTOP Energie AG, St. Gallerstrasse 5a, 8353 Elgg",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
-    },
-    "33076": {
-        "Bezeichnung": "TeraSlate Black 6DL-225; TeraSlate Black 6DQ-165; TeraSlate Black 6DM-150; TeraSlate Black 6DS-110",
-        "Beschreibung": "Photovoltaikmodule ohne Rahmen zur Dachintegration.\nGehärtetesSolarglas, Stärke = 5,0 mm.\nBefestigung der Module mit beschichteten Metallhaken.",
-        "Gesuchsteller": "3S Swiss Solar Solutions AG, Schorenstrasse 39, 3645 Gwatt (Thun)",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
-    },
-    "33077": {
-        "Bezeichnung": "TeraSlate Black 6DL-220.ST; TeraSlate Black 6DQ-160.ST; TeraSlate Black 6DM-145.ST; TeraSlate Black 6DS-105.ST",
-        "Beschreibung": "Photovoltaikmodule ohne Rahmen zur Dachintegration.\nGehärtetesSolarglas(satiniert), Stärke = 5,0 mm.\nBefestigung der Module mit beschichteten Metallhaken.",
-        "Gesuchsteller": "3S Swiss Solar Solutions AG, Schorenstrasse 39, 3645 Gwatt (Thun)",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
-    },
-    "33078": {
-        "Bezeichnung": "KPV xxx Wp HC NE",
-        "Beschreibung": "Glas-Glas PV-Modul.\nFrontabdeckung aus hochtransparentem, verstärktem Glas, Stärke = 2,0 mm.\nRückseitenmaterial ausSolarglasmit partiellem Keramikdruck schwarz,\nStärke = 2,0 mm.\nRahmen aus Aluminium.\nxxx bezeichnet die Leistung in Wp.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
-        "Gesuchsteller": "Sonnenkraft Energy GmbH, Solarstrasse 1, 9300 St. Veit an der Glan",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
-    },
-    "33079": {
-        "Bezeichnung": "KPV xxx WP HC Black",
-        "Beschreibung": "Glas-Folien PV-Modul.\nFrontabdeckung ausSolarglasESG, Stärke = 3,2 mm.\nRahmen Aluminium.\nxxx bezeichnet die Leistung in Wp.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
-        "Gesuchsteller": "Sonnenkraft Energy GmbH, Solarstrasse 1, 9300 St. Veit an der Glan",
-        "Gültig bis": "31.12.2029",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
-    },
-    "40332": {
-        "Bezeichnung": "Terza 251-V / Terza 251-H",
-        "Beschreibung": "Thermischer Flachkollektor für senkrechte und waagrechte Anwendungen.\nAbdeckung ESGSolarglas3,2 mm.\nSolar Keymark Nummer 011-7S2483 F.\nDie Anerkennung bezieht sich nur auf den solaren Teil, nicht auf eine allfällige Randabdeckung und die Unterkonstruktion.",
-        "Gesuchsteller": "Meier Tobler AG, Bahnstrasse 24, 8603 Schwerzenbach",
-        "Gültig bis": "31.12.2031",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
     },
     "32634": {
         "Bezeichnung": "SOLID Solrif",
