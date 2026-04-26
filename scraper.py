@@ -6,57 +6,30 @@ from playwright.async_api import async_playwright
 
 # --- KONFIGURATION ---
 URL = "https://www.hagelregister.ch/bauherren-architekten/bauteil-suche.html" 
-SUCHBEGRIFF = "ja solar" 
 DATEN_DATEI = "hagelregister_daten.json"
 
-async def hole_html_von_seite():
-    print(f"🚀 Starte Browser und suche nach '{SUCHBEGRIFF}'...")
-    async with async_playwright() as p:
-        # Browser unsichtbar starten
-        browser = await p.chromium.launch(headless=True)
-        page = await browser.new_page()
-        
-        await page.goto(URL)
-        await page.wait_for_load_state("networkidle")
-        
-        try:
-            # Suchfeld finden und Begriff eintippen
-            suchfeld = page.get_by_placeholder("Hier Suchbegriff(e) eingeben")
-            await suchfeld.clear()
-            await suchfeld.press_sequentially(SUCHBEGRIFF, delay=150)
-            
-            # Kurz warten, bis die Tabelle aufgebaut ist
-            await page.wait_for_timeout(3000) 
-        except Exception as e:
-            print(f"⚠️ Fehler bei der Eingabe: {e}")
-            await browser.close()
-            return None
-
-        # Das fertige HTML auslesen
-        html = await page.content()
-        await browser.close()
-        return html
+# HIER KANNST DU DEINE LISTE ANPASSEN (in Anführungszeichen, getrennt durch Kommata):
+SUCHBEGRIFFE = [
+    "ja solar", 
+    "jinko", 
+    "trina", 
+    "meyer burger"
+] 
 
 def extrahiere_alle_daten(html):
-    """Extrahiert alle Spalten für sichtbare Zeilen."""
+    """Extrahiert alle Spalten für sichtbare Zeilen aus dem HTML."""
     soup = BeautifulSoup(html, 'html.parser')
     ergebnisse = {}
-    
     zeilen = soup.find_all('tr')
     
     for zeile in zeilen:
-        # Versteckte Zeilen ignorieren
         style = zeile.get('style', '').lower().replace(' ', '')
         if 'display:none' in style:
             continue
             
         vkf_zelle = zeile.find('td', attrs={'data-heading': 'VKF Nummer'})
-        
         if vkf_zelle:
-            # VKF-Nummer extrahieren (ohne PDF-Icon)
             nr = vkf_zelle.get_text(separator=" ").strip().split(" ")[0]
-            
-            # Die restlichen Daten der Zeile auslesen
             ergebnisse[nr] = {
                 "Bezeichnung": zeile.find('td', attrs={'data-heading': 'Bezeichnung'}).get_text(strip=True),
                 "Beschreibung": zeile.find('td', attrs={'data-heading': 'Beschreibung'}).get_text(strip=True),
@@ -64,19 +37,62 @@ def extrahiere_alle_daten(html):
                 "Gültig bis": zeile.find('td', attrs={'data-heading': 'Gültig bis'}).get_text(strip=True),
                 "Klassierung": zeile.find('td', attrs={'data-heading': 'Klassierung'}).get_text(separator=" | ", strip=True)
             }
-                
     return ergebnisse
 
-async def main():
-    # 1. Neues HTML holen
-    html = await hole_html_von_seite()
-    if not html: 
-        return
+async def hole_alle_daten():
+    """Startet den Browser und klappert alle Suchbegriffe nacheinander ab."""
+    print(f"🚀 Starte Browser für {len(SUCHBEGRIFFE)} Suchbegriffe...")
+    gesammelte_daten = {}
     
-    neue_daten_gesamt = extrahiere_alle_daten(html)
-    print(f"🔎 {len(neue_daten_gesamt)} sichtbare Einträge gefunden.")
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        page = await browser.new_page()
+        
+        await page.goto(URL)
+        await page.wait_for_load_state("networkidle")
+        
+        for begriff in SUCHBEGRIFFE:
+            print(f"\n🔍 Suche nach '{begriff}'...")
+            try:
+                suchfeld = page.get_by_placeholder("Hier Suchbegriff(e) eingeben")
+                
+                # Feld leeren (wichtig für den 2., 3., 4. Suchbegriff)
+                await suchfeld.clear()
+                await page.wait_for_timeout(500) 
+                
+                # Begriff wie ein Mensch eintippen
+                await suchfeld.press_sequentially(begriff, delay=150)
+                
+                # Kurz warten, bis die Tabelle aufgebaut ist
+                await page.wait_for_timeout(3000) 
+                
+                # HTML auslesen und direkt extrahieren
+                html = await page.content()
+                neue_eintraege = extrahiere_alle_daten(html)
+                
+                print(f"   => {len(neue_eintraege)} Einträge für '{begriff}' gefunden.")
+                
+                # Die gefundenen Einträge in unser großes Gesamt-Lexikon packen
+                gesammelte_daten.update(neue_eintraege)
+                
+            except Exception as e:
+                print(f"⚠️ Fehler bei der Suche nach '{begriff}': {e}")
+        
+        await browser.close()
+        
+    return gesammelte_daten
 
-    # 2. Bestehende Daten aus der JSON-Datei laden
+async def main():
+    # 1. Alle Daten frisch von der Website holen
+    neue_daten_gesamt = await hole_alle_daten()
+    
+    if not neue_daten_gesamt: 
+        print("❌ Keine Daten gefunden.")
+        return
+        
+    print(f"\n✅ Insgesamt {len(neue_daten_gesamt)} eindeutige Einträge gesammelt.")
+
+    # 2. Bestehende Daten laden
     alte_daten_gesamt = {}
     if os.path.exists(DATEN_DATEI):
         with open(DATEN_DATEI, 'r', encoding='utf-8') as f:
@@ -92,7 +108,7 @@ async def main():
         elif alte_daten_gesamt[nr] != daten:
             geanderte_eintraege.append((nr, alte_daten_gesamt[nr], daten))
 
-    # 4. Änderungen ausgeben (diese landen in den GitHub Actions Logs)
+    # 4. Änderungen ausgeben (für das GitHub Log)
     if neue_eintraege:
         print("\n✨ NEUE ZERTIFIKATE:")
         for nr, d in neue_eintraege:
@@ -114,6 +130,5 @@ async def main():
         json.dump(neue_daten_gesamt, f, ensure_ascii=False, indent=4)
     print(f"\n💾 Daten in {DATEN_DATEI} aktualisiert.")
 
-# Skript starten
 if __name__ == "__main__":
     asyncio.run(main())
