@@ -13,7 +13,16 @@ SUCHBEGRIFFE = [
     "ja solar", 
     "jinko", 
     "trina", 
-    "meyer burger"
+    "aiko",
+    "aleo",
+    "das energy",
+    "goodwe",
+    "longi",
+    "solarglas",
+    "solitek",
+    "soluxtec",
+    "sunpower",
+    "victron"
 ] 
 
 def extrahiere_alle_daten(html):
