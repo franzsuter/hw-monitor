@@ -18,7 +18,6 @@ SUCHBEGRIFFE = [
     "das energy",
     "goodwe",
     "longi",
-    "solarglas",
     "solitek",
     "soluxtec",
     "sunpower",
