@@ -47,28 +47,35 @@
     </div>
 
     <script>
-        // 1. HISTORIE LADEN
-        fetch('history.json')
-            .then(res => res.json())
-            .then(historyData => {
-                const container = document.getElementById('history-inhalt');
-                if (!historyData || historyData.length === 0) {
-                    container.innerText = "Noch keine Änderungen aufgezeichnet.";
-                    return;
-                }
-                let html = "";
-                historyData.forEach(tag => {
-                    html += `<p><strong>${tag.datum}:</strong> `;
+    // 1. HISTORIE LADEN
+    fetch('history.json')
+        .then(res => res.json())
+        .then(historyData => {
+            const container = document.getElementById('history-inhalt');
+            if (!historyData || historyData.length === 0) {
+                container.innerText = "Noch keine Änderungen aufgezeichnet.";
+                return;
+            }
+            let html = "";
+            historyData.forEach(tag => {
+                html += `<p><strong>${tag.datum}:</strong> `;
+                
+                // NEU: Wenn es an diesem Tag keine Änderungen gab
+                if (tag.funde.length === 0) {
+                    html += `<span style="color: #7f8c8d; font-style: italic;">✅ Scan durchgeführt, keine Änderungen.</span>`;
+                } else {
+                    // Wenn es Änderungen gab
                     tag.funde.forEach(f => {
                         const klasse = f.typ === 'NEU' ? 'neu-tag' : 'update-tag';
                         html += `<span class="${klasse}">[${f.typ}]</span> ${f.bezeichnung} (Nr. ${f.nr}) | `;
                     });
-                    html += `</p>`;
-                });
-                container.innerHTML = html;
-            }).catch(() => {
-                document.getElementById('history-inhalt').innerText = "Historie wird nach dem nächsten Scan verfügbar sein.";
+                }
+                html += `</p>`;
             });
+            container.innerHTML = html;
+        }).catch(() => {
+            document.getElementById('history-inhalt').innerText = "Historie wird nach dem nächsten Scan verfügbar sein.";
+        });
 
         // 2. HAUPTDATEN LADEN
         fetch('hagelregister_daten.json')
