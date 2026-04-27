@@ -112,25 +112,25 @@ async def main():
     else:
         print("\n✅ Alles unverändert.")
 
-    # --- 5. HISTORIE AKTUALISIEREN ---
-    if neue_funde or anderungen:
-        history = []
-        if os.path.exists(HISTORY_DATEI):
-            with open(HISTORY_DATEI, 'r', encoding='utf-8') as f:
-                history = json.load(f)
-        
-        eintrag = {
-            "datum": datetime.now().strftime("%d.%m.%Y %H:%M"),
-            "funde": neue_funde + anderungen
-        }
-        
-        # Neuen Eintrag oben hinzufügen und Liste auf 20 begrenzen
-        history.insert(0, eintrag)
-        history = history[:20] 
-        
-        with open(HISTORY_DATEI, 'w', encoding='utf-8') as f:
-            json.dump(history, f, ensure_ascii=False, indent=4)
-        print(f"💾 Historie in {HISTORY_DATEI} gespeichert.")
+    # --- 5. HISTORIE AKTUALISIEREN (JETZT IMMER AUSFÜHREN) ---
+    history = []
+    if os.path.exists(HISTORY_DATEI):
+        with open(HISTORY_DATEI, 'r', encoding='utf-8') as f:
+            history = json.load(f)
+    
+    # Dieser Eintrag wird JEDEN Tag erstellt (auch wenn 'funde' leer ist)
+    eintrag = {
+        "datum": datetime.now().strftime("%d.%m.%Y %H:%M"),
+        "funde": neue_funde + anderungen
+    }
+    
+    history.insert(0, eintrag)
+    # Da wir jetzt jeden Tag loggen, heben wir das Gedächtnis auf 30 Einträge an
+    history = history[:30] 
+    
+    with open(HISTORY_DATEI, 'w', encoding='utf-8') as f:
+        json.dump(history, f, ensure_ascii=False, indent=4)
+    print(f"💾 Historie in {HISTORY_DATEI} gespeichert.")
 
     # 6. Aktuellen Stand speichern
     with open(DATEN_DATEI, 'w', encoding='utf-8') as f:
