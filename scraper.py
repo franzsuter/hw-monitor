@@ -5,6 +5,18 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
+def load_json(filepath, default_value):
+    """Lädt JSON-Daten aus einer Datei oder gibt den Standardwert zurück."""
+    if os.path.exists(filepath):
+        with open(filepath, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return default_value
+
+def save_json(filepath, data):
+    """Speichert Daten als JSON in eine Datei."""
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
+
 # --- KONFIGURATION ---
 URL = "https://www.hagelregister.ch/bauherren-architekten/bauteil-suche.html" 
 DATEN_DATEI = "hagelregister_daten.json"
@@ -91,10 +103,7 @@ async def main():
     print(f"\n✅ Insgesamt {len(neue_daten_gesamt)} eindeutige Einträge gesammelt.")
 
     # 2. Bestehende Daten laden
-    alte_daten_gesamt = {}
-    if os.path.exists(DATEN_DATEI):
-        with open(DATEN_DATEI, 'r', encoding='utf-8') as f:
-            alte_daten_gesamt = json.load(f)
+    alte_daten_gesamt = load_json(DATEN_DATEI, {})
 
     # 3. Vergleichen
     neue_funde = []
@@ -113,10 +122,7 @@ async def main():
         print("\n✅ Alles unverändert.")
 
     # --- 5. HISTORIE AKTUALISIEREN (JETZT IMMER AUSFÜHREN) ---
-    history = []
-    if os.path.exists(HISTORY_DATEI):
-        with open(HISTORY_DATEI, 'r', encoding='utf-8') as f:
-            history = json.load(f)
+    history = load_json(HISTORY_DATEI, [])
     
     # Dieser Eintrag wird JEDEN Tag erstellt (auch wenn 'funde' leer ist)
     eintrag = {
@@ -128,13 +134,11 @@ async def main():
     # Da wir jetzt jeden Tag loggen, heben wir das Gedächtnis auf 30 Einträge an
     history = history[:30] 
     
-    with open(HISTORY_DATEI, 'w', encoding='utf-8') as f:
-        json.dump(history, f, ensure_ascii=False, indent=4)
+    save_json(HISTORY_DATEI, history)
     print(f"💾 Historie in {HISTORY_DATEI} gespeichert.")
 
     # 6. Aktuellen Stand speichern
-    with open(DATEN_DATEI, 'w', encoding='utf-8') as f:
-        json.dump(neue_daten_gesamt, f, ensure_ascii=False, indent=4)
+    save_json(DATEN_DATEI, neue_daten_gesamt)
     print(f"💾 Daten in {DATEN_DATEI} aktualisiert.")
 
 if __name__ == "__main__":
