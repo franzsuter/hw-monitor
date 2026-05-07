@@ -1,9 +1,10 @@
 import asyncio
 import json
 import os
+import traceback
 from datetime import datetime
 from bs4 import BeautifulSoup
-from playwright.async_api import async_playwright
+from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError, Error as PlaywrightError
 
 def load_json(filepath, default_value):
     """Lädt JSON-Daten aus einer Datei oder gibt den Standardwert zurück."""
@@ -86,8 +87,13 @@ async def hole_alle_daten():
                 print(f"   => {len(neue_eintraege)} Einträge für '{begriff}' gefunden.")
                 gesammelte_daten.update(neue_eintraege)
                 
+            except PlaywrightTimeoutError as e:
+                print(f"⚠️ Timeout-Fehler bei der Suche nach '{begriff}': {e}")
+            except PlaywrightError as e:
+                print(f"⚠️ Playwright-Fehler bei der Suche nach '{begriff}': {e}")
             except Exception as e:
-                print(f"⚠️ Fehler bei der Suche nach '{begriff}': {e}")
+                print(f"⚠️ Unerwarteter Fehler bei der Suche nach '{begriff}': {e}")
+                traceback.print_exc()
         
         await browser.close()
         
