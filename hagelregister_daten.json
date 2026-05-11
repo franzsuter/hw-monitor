@@ -237,20 +237,6 @@
         "Gültig bis": "31.12.2030",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
-    "40276": {
-        "Bezeichnung": "LR7-60HVD-xxxM",
-        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm, Farbe schwarz eloxiert.\nDie Anerkennung gilt für alle erhältlichen Leistungsklassen. xxx steht für die\nverschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
-        "Gesuchsteller": "LONGiSolar Technologie GmbH, Platz der Einheit 2, 60327 Frankfurt am Main",
-        "Gültig bis": "31.12.2030",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
-    },
-    "40277": {
-        "Bezeichnung": "LR7-54HVD-xxxM; LR7-54HVBB-xxxM",
-        "Beschreibung": "Glas-Glas Photovoltaikmodul. \nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 1,6 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm, Farbe schwarz eloxiert. \nDie Anerkennung gilt für alle erhältlichen Leistungsklassen. xxx steht für die \nverschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
-        "Gesuchsteller": "LONGiSolar Technologie GmbH, Platz der Einheit 2, 60327 Frankfurt am Main",
-        "Gültig bis": "31.12.2030",
-        "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
-    },
     "32634": {
         "Bezeichnung": "SOLID Solrif",
         "Beschreibung": "Glas-Glas PV-Modul.\nOberes Glas gehärtet, t = 3.0 mm; unteres Glas gehärtet, t = 3.0 mm.\nModul in Rahmen aus Aluminium gelagert.\nDie Hagelprüfung und diese Anerkennung beziehen sich nur auf den solaren Teil, nicht auf den Rahmen, eine allfällige Randabdeckung oder die Unterkonstruktion.",
