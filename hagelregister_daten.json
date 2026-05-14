@@ -14,9 +14,9 @@
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
     "33115": {
-        "Bezeichnung": "JAM54D40-xxx/LB; JAM54D41-xxx/LB",
+        "Bezeichnung": "JAM54D40-xxx/LB; JAM54D41-xxx/LB; JAM54D40-xxx/LR; JAM54D41-xxx/LR",
         "Beschreibung": "Monokristallines Silizium-PV-Modul (Glas/Glas).\nOberes Glas gehärtet, t = 1,6 mm; unteres Glas gehärtet, t = 1,6 mm.\nAlu-Rahmen t = 30 mm, schwarz eloxiert.\nxxx steht für die verschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
-        "Gesuchsteller": "JA SolarGmbH, Lyonel-Feininger Strasse 28, 80807 München",
+        "Gesuchsteller": "JA SolarGmbH, Bauhausplatz 4, 80807 München",
         "Gültig bis": "31.12.2029",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
     },
@@ -70,7 +70,7 @@
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
     "33475": {
-        "Bezeichnung": "JAM54S40‐xxx/LR (mit Frontglas = 2,8 mm); JAM54S40‐xxx/LR BF (mit Frontglas = 2,8 mm); JAM54S41‐xxx/LR (mit Frontglas = 2,8 mm)",
+        "Bezeichnung": "JAM54S40‐xxx/LR (mit Frontglas = 2,8 mm); JAM54S40‐xxx/LR BF (mit Frontglas = 2,8 mm); JAM54S41‐xxx/LR (mit Frontglas = 2,8 mm); JAT54S40‐xxx/LR (mit Frontglas = 2,8 mm); JAT54D41‐xxx/LR (mit Frontglas = 2,8 mm)",
         "Beschreibung": "Monokristallines Silizium-PV-Modul (Glas/Folie).\nFrontglas t = 2,8 mm aus gehärtetem Glas.\nAlu-Rahmen t = 30 mm, schwarz oder silber eloxiert.\nxxx steht für die verschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
         "Gesuchsteller": "JA SolarGmbH, Bauhausplatz 4, 80807 München",
         "Gültig bis": "31.12.2030",
@@ -98,7 +98,7 @@
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
     "40046": {
-        "Bezeichnung": "JAM54D40‐xxx/LB; JAM54D40‐xxx/LB BF; JAM54D41‐xxx/LB",
+        "Bezeichnung": "JAM54D40‐xxx/LB; JAM54D40‐xxx/LB BF; JAM54D41‐xxx/LB; JAM54D40‐xxx/LR; BF; JAM54D41‐xxx/LR",
         "Beschreibung": "Glas-Glas Photovoltaikmodul. \nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,8 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm, Farbe schwarz oder silber eloxiert.\nxxx steht für die verschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil und alle\nerhältlichen Leistungsklassen.",
         "Gesuchsteller": "JA SolarGmbH, Bauhausplatz 4, 80807 München",
         "Gültig bis": "31.12.2030",
