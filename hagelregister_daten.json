@@ -300,6 +300,20 @@
         "Gültig bis": "31.12.2031",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
     },
+    "40611": {
+        "Bezeichnung": "SOLID Agro Framed 35 mm B.64; SOLID Agro Framed 40 mm B.64; SOLID Black Framed 35 mm B.96; SOLID Black Framed 40 mm B.96; SOLID Satin Framed 35 mm B.96; SOLID Satin Framed 40 mm B.96; SOLID Semi-clear Framed 35 mm B.96; SOLID Semi-clear Framed 40 mm B.96",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nUmlaufender Rahmen aus Aluminium.\nDie Anerkennung bezieht sich auf den solaren Teil, den Rahmen und alle \nLeistungsklassen.",
+        "Gesuchsteller": "SoliTekcells, Mokslininku strasse 6a, 08412 Vilnius",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
+    },
+    "40612": {
+        "Bezeichnung": "SOLRIF D Agro B.64 SOLRIF D Black B.96; SOLRIF D Satin B.96; SOLRIF D Semi-clear B.96; SOLRIF D Terracotta Bronze B.96; SOLRIF D Terracotta Orange B.96",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nUmlaufender Rahmen aus Aluminium.\nDie Anerkennung bezieht sich auf den solaren Teil, den Rahmen und alle \nLeistungsklassen.",
+        "Gesuchsteller": "SoliTekcells, Mokslininku strasse 6a, 08412 Vilnius",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
+    },
     "32830": {
         "Bezeichnung": "PowerSlate MONO XSC Alpine",
         "Beschreibung": "Glas-Glas PV-Modul.\nOberes Glas ESG 3,2 mm.\nUnteres Glas ESG 2,0 mm.\nRahmenlos.\nAnerkennung bezieht sich nur auf den solaren Teil, nicht auf eine allfällige Randabdeckung und die Unterkonstruktion.",
