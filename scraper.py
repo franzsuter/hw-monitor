@@ -34,7 +34,8 @@ SUCHBEGRIFFE = [
     "solitek",
     "soluxtec",
     "sunpower",
-    "victron"
+    "victron",
+    "SolarRoof"
 ]
 
 def extrahiere_alle_daten(html):
