@@ -355,5 +355,12 @@
         "Gesuchsteller": "SoLuxTecGmbH, Werner von Siemens Strasse 25, 54634 Bitburg",
         "Gültig bis": "31.12.2029",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
+    },
+    "40490": {
+        "Bezeichnung": "SR-Solrif-xxxW-108N-GG3.2+2mm-y-V1 oder V2;                                                                SR-Standard-xxxW-96N-GG3.2+2mm-y-V2 oder V1",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul. \nFrontglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium.\nDie Anerkennung gilt für alle erhältlichen Leistungsklassen.\nxxx steht für die verschiedenen Leistungsklassen des Moduls.\ny steht für T (Terrakotta) oder FB (Full Black).\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
+        "Gesuchsteller": "SolarRoofGmbH, Röntgenstrasse 14, 95478 Kemnath",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     }
 }
