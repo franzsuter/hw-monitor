@@ -1,5 +1,20 @@
 [
     {
+        "datum": "24.06.2026 10:24",
+        "funde": [
+            {
+                "nr": "40276",
+                "bezeichnung": "LR7-60HVD-xxxM",
+                "typ": "NEU"
+            },
+            {
+                "nr": "40277",
+                "bezeichnung": "LR7-54HVD-xxxM; LR7-54HVBB-xxxM",
+                "typ": "NEU"
+            }
+        ]
+    },
+    {
         "datum": "23.06.2026 10:38",
         "funde": []
     },
@@ -130,10 +145,6 @@
     },
     {
         "datum": "27.05.2026 10:58",
-        "funde": []
-    },
-    {
-        "datum": "25.05.2026 11:14",
         "funde": []
     }
 ]
