@@ -1,5 +1,9 @@
 [
     {
+        "datum": "28.06.2026 10:01",
+        "funde": []
+    },
+    {
         "datum": "27.06.2026 09:31",
         "funde": []
     },
@@ -131,20 +135,5 @@
     {
         "datum": "31.05.2026 09:48",
         "funde": []
-    },
-    {
-        "datum": "30.05.2026 09:21",
-        "funde": [
-            {
-                "nr": "40611",
-                "bezeichnung": "SOLID Agro Framed 35 mm B.64; SOLID Agro Framed 40 mm B.64; SOLID Black Framed 35 mm B.96; SOLID Black Framed 40 mm B.96; SOLID Satin Framed 35 mm B.96; SOLID Satin Framed 40 mm B.96; SOLID Semi-clear Framed 35 mm B.96; SOLID Semi-clear Framed 40 mm B.96",
-                "typ": "NEU"
-            },
-            {
-                "nr": "40612",
-                "bezeichnung": "SOLRIF D Agro B.64 SOLRIF D Black B.96; SOLRIF D Satin B.96; SOLRIF D Semi-clear B.96; SOLRIF D Terracotta Bronze B.96; SOLRIF D Terracotta Orange B.96",
-                "typ": "NEU"
-            }
-        ]
     }
 ]
