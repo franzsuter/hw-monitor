@@ -1,5 +1,20 @@
 [
     {
+        "datum": "07.07.2026 10:28",
+        "funde": [
+            {
+                "nr": "40689",
+                "bezeichnung": "SOLID Black framelessB96; SOLID Satin frameless B96; SOLID Semi-clear frameless B96; SOLID Agro frameless B64",
+                "typ": "NEU"
+            },
+            {
+                "nr": "40276",
+                "bezeichnung": "LR7-60HVD-xxxM; LR8-66HYD-xxxM; LR9-66HYD-xxxM",
+                "typ": "UPDATE"
+            }
+        ]
+    },
+    {
         "datum": "06.07.2026 11:40",
         "funde": []
     },
@@ -136,10 +151,6 @@
     },
     {
         "datum": "09.06.2026 10:36",
-        "funde": []
-    },
-    {
-        "datum": "08.06.2026 12:00",
         "funde": []
     }
 ]

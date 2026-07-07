@@ -252,8 +252,8 @@
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
     "40276": {
-        "Bezeichnung": "LR7-60HVD-xxxM",
-        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm, Farbe schwarz eloxiert.\nDie Anerkennung gilt für alle erhältlichen Leistungsklassen. xxx steht für die\nverschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
+        "Bezeichnung": "LR7-60HVD-xxxM; LR8-66HYD-xxxM; LR9-66HYD-xxxM",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm, Farbe schwarz eloxiert.\nDie Anerkennung gilt für alle erhältlichen Leistungsklassen. xxx steht für die\nverschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil.",
         "Gesuchsteller": "LongiGreen Energy Technology Co., Ltd., Shangyuan Road 8369, 710018 Xi'an",
         "Gültig bis": "31.12.2030",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
@@ -334,6 +334,13 @@
         "Gesuchsteller": "SoliTekcells, Mokslininku strasse 6a, 08412 Vilnius",
         "Gültig bis": "31.12.2031",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 5 | Hagelwiderstand Aussehen: HW 5"
+    },
+    "40689": {
+        "Bezeichnung": "SOLID Black framelessB96; SOLID Satin frameless B96; SOLID Semi-clear frameless B96; SOLID Agro frameless B64",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul.  \nFrontglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.\nRahmenlos.\nDie Anerkennung gilt für alle erhältlichen Leistungsklassen. Die Anerkennung bezieht sich auf den solaren Teil.",
+        "Gesuchsteller": "SoliTekcells, Mokslininku strasse 6a, 08412 Vilnius",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
     "32830": {
         "Bezeichnung": "PowerSlate MONO XSC Alpine",
