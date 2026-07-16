@@ -342,6 +342,13 @@
         "Gültig bis": "31.12.2031",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     },
+    "40718": {
+        "Bezeichnung": "MAGNUS B.108",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium.\nDie Anerkennung bezieht sich auf den solaren Teil, den Rahmen und alle \nLeistungsklassen.",
+        "Gesuchsteller": "SoliTekcells, Mokslininku strasse 6a, 08412 Vilnius",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
+    },
     "32830": {
         "Bezeichnung": "PowerSlate MONO XSC Alpine",
         "Beschreibung": "Glas-Glas PV-Modul.\nOberes Glas ESG 3,2 mm.\nUnteres Glas ESG 2,0 mm.\nRahmenlos.\nAnerkennung bezieht sich nur auf den solaren Teil, nicht auf eine allfällige Randabdeckung und die Unterkonstruktion.",
