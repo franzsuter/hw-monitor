@@ -397,5 +397,12 @@
         "Gesuchsteller": "SolarRoofGmbH, Röntgenstrasse 14, 95478 Kemnath",
         "Gültig bis": "31.12.2031",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
+    },
+    "40333": {
+        "Bezeichnung": "GK-1-72HTBD-xxxM; GK-1-54HTBD-xxxM; GK-4-66HTBD-xxxM; GK-4-54HTBD-xxxM; GK-4-48HTBD-xxxM; GK-3-72HGBD-xxxM; GK-3-54HGBD-xxxM; GK-3-54HGDb-xxxM; GK-5-60HGBD-xxxM; GK-5-60HGDb-xxxM; GK-5-54HGBD-xxxM; GK-5-54HGDb-xxxM",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul. \nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm.\nxxx bezeichnet die Leistung in Wp.\nDie Anerkennung bezieht sich auf den solaren Teil und alle erhältlichen Leistungsklassen.",
+        "Gesuchsteller": "GokinSolar (HongKong) Company Limited , Lockhart Road 54-62, 999077 Wanchai, HK",
+        "Gültig bis": "31.12.2030",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
     }
 }
