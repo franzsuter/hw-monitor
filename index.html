@@ -57,23 +57,33 @@
                 container.innerText = "Noch keine Änderungen aufgezeichnet.";
                 return;
             }
-            let html = "";
+            container.innerHTML = "";
             historyData.forEach(tag => {
-                html += `<p><strong>${tag.datum}:</strong> `;
+                const p = document.createElement('p');
+                const strong = document.createElement('strong');
+                strong.textContent = tag.datum + ": ";
+                p.appendChild(strong);
                 
                 // NEU: Wenn es an diesem Tag keine Änderungen gab
                 if (tag.funde.length === 0) {
-                    html += `<span style="color: #7f8c8d; font-style: italic;">✅ Scan durchgeführt, keine Änderungen.</span>`;
+                    const span = document.createElement('span');
+                    span.style.color = "#7f8c8d";
+                    span.style.fontStyle = "italic";
+                    span.textContent = "✅ Scan durchgeführt, keine Änderungen.";
+                    p.appendChild(span);
                 } else {
                     // Wenn es Änderungen gab
                     tag.funde.forEach(f => {
-                        const klasse = f.typ === 'NEU' ? 'neu-tag' : 'update-tag';
-                        html += `<span class="${klasse}">[${f.typ}]</span> ${f.bezeichnung} (Nr. ${f.nr}) | `;
+                        const spanKlasse = document.createElement('span');
+                        spanKlasse.className = f.typ === 'NEU' ? 'neu-tag' : 'update-tag';
+                        spanKlasse.textContent = `[${f.typ}] `;
+                        p.appendChild(spanKlasse);
+
+                        p.appendChild(document.createTextNode(`${f.bezeichnung} (Nr. ${f.nr}) | `));
                     });
                 }
-                html += `</p>`;
+                container.appendChild(p);
             });
-            container.innerHTML = html;
         }).catch(() => {
             document.getElementById('history-inhalt').innerText = "Historie wird nach dem nächsten Scan verfügbar sein.";
         });
@@ -84,14 +94,30 @@
             .then(data => {
                 const tbody = document.getElementById('inhalt');
                 for (const [nr, info] of Object.entries(data)) {
-                    tbody.innerHTML += `<tr>
-                        <td><strong>${nr}</strong></td>
-                        <td>${info.Bezeichnung}</td>
-                        <td class="beschreibung">${info.Beschreibung}</td>
-                        <td>${info.Gesuchsteller}</td>
-                        <td>${info.Klassierung}</td>
-                        <td>${info['Gültig bis']}</td>
-                    </tr>`;
+                    const row = tbody.insertRow();
+
+                    // VKF Nr.
+                    const cellNr = row.insertCell();
+                    const strong = document.createElement('strong');
+                    strong.textContent = nr;
+                    cellNr.appendChild(strong);
+
+                    // Bezeichnung
+                    row.insertCell().textContent = info.Bezeichnung;
+
+                    // Beschreibung
+                    const cellDesc = row.insertCell();
+                    cellDesc.className = 'beschreibung';
+                    cellDesc.textContent = info.Beschreibung;
+
+                    // Gesuchsteller
+                    row.insertCell().textContent = info.Gesuchsteller;
+
+                    // Klassierung
+                    row.insertCell().textContent = info.Klassierung;
+
+                    // Gültig bis
+                    row.insertCell().textContent = info['Gültig bis'];
                 }
                 document.getElementById('loading').style.display = 'none';
                 document.getElementById('tabelle').style.display = 'table';
