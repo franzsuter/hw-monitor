@@ -411,5 +411,19 @@
         "Gesuchsteller": "GokinSolar (HongKong) Company Limited , Lockhart Road 54-62, 999077 Wanchai, HK",
         "Gültig bis": "31.12.2030",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
+    },
+    "40783": {
+        "Bezeichnung": "GK-4-66HGBD-xxxM, GK-4-78HGBD-xxxM, GK-3-72HGFBD-xxxM,                            GK-3-54HGFBD-xxxM, GK-3-54HGFDb-xxxM",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nRückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm.\nUmlaufender Rahmen aus Aluminium, Höhe 30 mm.\nxxx steht für die verschiedenen Leistungsklassen des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil.",
+        "Gesuchsteller": "GokinSolar Co Ltd, Office 1102, No. 58 Huajin Street, Hengqin Free Trade Zone, 519000 Zhuhai, Guangdong",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
+    },
+    "40784": {
+        "Bezeichnung": "GK-3-54HGb-xxxM, GK-3-54HG-xxxM, GK-3-54HGF-xxxM, GK-3-54HGFb-xxXM, GK-3-72HGF-xxxM, GK-3-72HG-xxxM",
+        "Beschreibung": "Glas-Folien Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm. \nRückseitenfolie.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm. \nxxx steht für die verschiedenen Leistungsklassen in Wp des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil.",
+        "Gesuchsteller": "GokinSolar Co Ltd, Office 1102, No. 58 Huajin Street, Hengqin Free Trade Zone, 519000 Zhuhai, Guangdong",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
     }
 }
