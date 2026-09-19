@@ -272,6 +272,13 @@
         "Gültig bis": "31.12.2030",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3 | Hagelwiderstand Aussehen: HW 3"
     },
+    "40798": {
+        "Bezeichnung": "LR7-60HVH-xxxM",
+        "Beschreibung": "Glas-Folien Photovoltaikmodul.\nFrontglas vorgespannt/teilvorgespannt, Stärke = 3,2 mm.  \nRückseitenfolie.\nUmlaufender Rahmen aus Aluminium, Höhe = 30 mm.  \nxxx steht für die verschiedenen Leistungsklassen in Wp des Moduls.\nDie Anerkennung bezieht sich auf den solaren Teil.",
+        "Gesuchsteller": "LONGISolar Technology Co., Ltd., No.8369 Shangyuan Road, Xi'an Economic And Technological Development Zone, 710018 Shaanxi",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4"
+    },
     "32634": {
         "Bezeichnung": "SOLID Solrif",
         "Beschreibung": "Glas-Glas PV-Modul.\nOberes Glas gehärtet, t = 3.0 mm; unteres Glas gehärtet, t = 3.0 mm.\nModul in Rahmen aus Aluminium gelagert.\nDie Hagelprüfung und diese Anerkennung beziehen sich nur auf den solaren Teil, nicht auf den Rahmen, eine allfällige Randabdeckung oder die Unterkonstruktion.",
