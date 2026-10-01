@@ -1,5 +1,25 @@
 [
     {
+        "datum": "01.10.2026 14:18",
+        "funde": [
+            {
+                "nr": "40829",
+                "bezeichnung": "JAM66D45-xxx/LB",
+                "typ": "NEU"
+            },
+            {
+                "nr": "40830",
+                "bezeichnung": "JAM60D42-535/LB",
+                "typ": "NEU"
+            },
+            {
+                "nr": "40828",
+                "bezeichnung": "BLACKSTAR Satin B96 445W; Solrif N Satin B96 445W",
+                "typ": "NEU"
+            }
+        ]
+    },
+    {
         "datum": "30.09.2026 13:25",
         "funde": []
     },
@@ -130,10 +150,6 @@
     },
     {
         "datum": "02.09.2026 12:01",
-        "funde": []
-    },
-    {
-        "datum": "01.09.2026 12:26",
         "funde": []
     }
 ]
