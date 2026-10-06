@@ -1,5 +1,9 @@
 [
     {
+        "datum": "06.10.2026 14:01",
+        "funde": []
+    },
+    {
         "datum": "05.10.2026 15:40",
         "funde": []
     },
@@ -142,20 +146,5 @@
     {
         "datum": "07.09.2026 13:22",
         "funde": []
-    },
-    {
-        "datum": "06.09.2026 11:34",
-        "funde": [
-            {
-                "nr": "40783",
-                "bezeichnung": "GK-4-66HGBD-xxxM, GK-4-78HGBD-xxxM, GK-3-72HGFBD-xxxM,                            GK-3-54HGFBD-xxxM, GK-3-54HGFDb-xxxM",
-                "typ": "NEU"
-            },
-            {
-                "nr": "40784",
-                "bezeichnung": "GK-3-54HGb-xxxM, GK-3-54HG-xxxM, GK-3-54HGF-xxxM, GK-3-54HGFb-xxXM, GK-3-72HGF-xxxM, GK-3-72HG-xxxM",
-                "typ": "NEU"
-            }
-        ]
     }
 ]
