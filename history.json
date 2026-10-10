@@ -1,5 +1,341 @@
 [
     {
+        "datum": "10.10.2026 20:04",
+        "scan_at": "2026-10-10T20:04:35.188045+02:00",
+        "funde": [
+            {
+                "nr": "33013",
+                "bezeichnung": "JAM54S30/LR-Serie; JAM54S31/LR-Serie",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33114",
+                "bezeichnung": "JAM54S31-xxx/LR; JAM54S30/LR",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33115",
+                "bezeichnung": "JAM54D40-xxx/LB; JAM54D41-xxx/LB; JAM54D40-xxx/LR; JAM54D41-xxx/LR",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33138",
+                "bezeichnung": "JAM72S30-LR",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33140",
+                "bezeichnung": "JAM66D45-LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33372",
+                "bezeichnung": "JAM72D30/MB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33373",
+                "bezeichnung": "JAM72D42-LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33395",
+                "bezeichnung": "JAM60D42-LB; JAM54D40-LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33440",
+                "bezeichnung": "JAM60D42-LB; JAM54D40-LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33474",
+                "bezeichnung": "JAM54S40‐xxx/LR (mit Frontglas = 3,2 mm); JAM54S40‐xxx/LR BF (mit Frontglas = 3,2 mm); JAM54S41‐xxx/LR (mit Frontglas = 3,2 mm)",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33475",
+                "bezeichnung": "JAM54S40‐xxx/LR (mit Frontglas = 2,8 mm); JAM54S40‐xxx/LR BF (mit Frontglas = 2,8 mm); JAM54S41‐xxx/LR (mit Frontglas = 2,8 mm); JAT54S40‐xxx/LR (mit Frontglas = 2,8 mm); JAT54D41‐xxx/LR (mit Frontglas = 2,8 mm)",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33500",
+                "bezeichnung": "JAM60D40/LB; JAM60D41/LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40006",
+                "bezeichnung": "JAM66D46/LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40045",
+                "bezeichnung": "JAM54D40‐xxx/LB; JAM54D40‐xxx/LB BF; JAM54D41‐xxx/LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40046",
+                "bezeichnung": "JAM54D40‐xxx/LB; JAM54D40‐xxx/LB BF; JAM54D41‐xxx/LB; JAM54D40‐xxx/LR; BF; JAM54D41‐xxx/LR",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40164",
+                "bezeichnung": "JAM78D40/MB; JAM78D40/GB; JAM72D40/MB; JAM72D42/LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40600",
+                "bezeichnung": "JAM66D45-LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40749",
+                "bezeichnung": "JAM66D50/GB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40829",
+                "bezeichnung": "JAM66D45-xxx/LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40830",
+                "bezeichnung": "JAM60D42-535/LB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40853",
+                "bezeichnung": "JAM48D50-51/LR",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33126",
+                "bezeichnung": "JKM430N-54HL4R-BDV; JKM440N-54HL4R-BDV; JKM435N-54HL4R-BDV; JKM425N-54HL4R-BDV; JKM420N-54HL4R-BDV",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33127",
+                "bezeichnung": "JKM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40269",
+                "bezeichnung": "JKMxxxN-48HL4M-DV; JKMxxxN-48HL4M-DB; JKMxxxN-48HL4M-BDV",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40486",
+                "bezeichnung": "JKMxxxN-48QL6-DV; JKMxxxN-48QL6-DB; JKMxxxN-48QL6-BDV",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40685",
+                "bezeichnung": "JKMxxxN-48QL6-DX",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33080",
+                "bezeichnung": "NEG9R.25; NEGR9C.27; NEG9R.28",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33117",
+                "bezeichnung": "Trina Vertex S+ TSM-xxxNEG9R.28; TSM-xxxNEG9RC.27",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40080",
+                "bezeichnung": "TSM-xxxNED9R.28; TSM-xxxNED9RC.27; TSM-xxxNED9R.25; TSM-xxxNED9R.20",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40328",
+                "bezeichnung": "NED19RC.20; NED19RC.28; NED19R.20; NED19R.28",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33228",
+                "bezeichnung": "AIKO-Axxx-MAH54Mb; AIKO-Axxx-MAH54Mw",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40043",
+                "bezeichnung": "Aiko-Axxx-MCE54Mb; Aiko-Axxx-MCE54Mw",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32193",
+                "bezeichnung": "LEO-N (L62), LEO-N (L64), LEO-N BLACK (L82), LEO-N BLACK (L84)",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32219",
+                "bezeichnung": "LEO-N Sol (S82), LEO-N Sol (S84)",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33459",
+                "bezeichnung": "BMT-S2/nnnA",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33460",
+                "bezeichnung": "BMT-P2/nnnA",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33177",
+                "bezeichnung": "HI-MO X6 LR5-54HTH-xxxM; HI-MO X6 LR5-54HTB-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40031",
+                "bezeichnung": "LR7-54HVH-xxxM; LR7-54HVB-xxxM; LR7-72HVH-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40037",
+                "bezeichnung": "LR7-54HTH-xxxM; LR7-54HTB-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40275",
+                "bezeichnung": "LR8-66HYD-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40276",
+                "bezeichnung": "LR7-60HVD-xxxM; LR8-66HYD-xxxM; LR9-66HYD-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40277",
+                "bezeichnung": "LR7-54HVD-xxxM; LR7-54HVBB-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40798",
+                "bezeichnung": "LR7-60HVH-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32634",
+                "bezeichnung": "SOLID Solrif",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32835",
+                "bezeichnung": "SOLID Solrif",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32916",
+                "bezeichnung": "SOLID Solrif",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33024",
+                "bezeichnung": "Blackstar",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40002",
+                "bezeichnung": "SOLID Solrif D",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40003",
+                "bezeichnung": "SOLID Bifacial",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40004",
+                "bezeichnung": "SOLID Bifacial gerahmt",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40488",
+                "bezeichnung": "BLACKSTAR B96; SOLRIF N Black B96; MAGNUS B108",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40611",
+                "bezeichnung": "SOLID Agro Framed 35 mm B.64; SOLID Agro Framed 40 mm B.64; SOLID Black Framed 35 mm B.96; SOLID Black Framed 40 mm B.96; SOLID Satin Framed 35 mm B.96; SOLID Satin Framed 40 mm B.96; SOLID Semi-clear Framed 35 mm B.96; SOLID Semi-clear Framed 40 mm B.96",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40612",
+                "bezeichnung": "SOLRIF D Agro B.64 SOLRIF D Black B.96; SOLRIF D Satin B.96; SOLRIF D Semi-clear B.96; SOLRIF D Terracotta Bronze B.96; SOLRIF D Terracotta Orange B.96",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40689",
+                "bezeichnung": "SOLID Black framelessB96; SOLID Satin frameless B96; SOLID Semi-clear frameless B96; SOLID Agro frameless B64",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40718",
+                "bezeichnung": "MAGNUS B.108",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40828",
+                "bezeichnung": "BLACKSTAR Satin B96 445W; Solrif N Satin B96 445W",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32830",
+                "bezeichnung": "PowerSlate MONO XSC Alpine",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32831",
+                "bezeichnung": "PowerSlate MONO XSC",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "32832",
+                "bezeichnung": "DAS MODUL MONO XSC Ninside Serie",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33237",
+                "bezeichnung": "SOLUXTEC DAS MODUL (Ninside Serie)",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33238",
+                "bezeichnung": "SOLUXTEC DAS MODUL ALPINE Pure Glass (Ninside Serie Pure Glass)",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "33281",
+                "bezeichnung": "SOLUXTEC DAS MODUL PURE GLASS; SOLUXTEC DAS MODUL ALPINE",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40490",
+                "bezeichnung": "SR-Solrif-xxxW-108N-GG3.2+2mm-y-V1 oder V2; SR-Standard-xxxW-96N-GG3.2+2mm-y-V2 oder V1",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40333",
+                "bezeichnung": "GK-1-72HTBD-xxxM; GK-1-54HTBD-xxxM; GK-4-66HTBD-xxxM; GK-4-54HTBD-xxxM; GK-4-48HTBD-xxxM; GK-3-72HGBD-xxxM; GK-3-54HGBD-xxxM; GK-3-54HGDb-xxxM; GK-5-60HGBD-xxxM; GK-5-60HGDb-xxxM; GK-5-54HGBD-xxxM; GK-5-54HGDb-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40783",
+                "bezeichnung": "GK-4-66HGBD-xxxM, GK-4-78HGBD-xxxM, GK-3-72HGFBD-xxxM, GK-3-54HGFBD-xxxM, GK-3-54HGFDb-xxxM",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40784",
+                "bezeichnung": "GK-3-54HGb-xxxM, GK-3-54HG-xxxM, GK-3-54HGF-xxxM, GK-3-54HGFb-xxXM, GK-3-72HGF-xxxM, GK-3-72HG-xxxM",
+                "typ": "UPDATE"
+            }
+        ]
+    },
+    {
         "datum": "10.10.2026 17:55",
         "funde": []
     },
@@ -141,10 +477,6 @@
     },
     {
         "datum": "13.09.2026 12:37",
-        "funde": []
-    },
-    {
-        "datum": "12.09.2026 11:32",
         "funde": []
     }
 ]
