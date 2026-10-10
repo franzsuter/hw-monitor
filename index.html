@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hagelregister Monitor</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 40px; background: #f4f7f6; }
@@ -16,6 +17,8 @@
         .beschreibung { font-size: 0.85em; color: #555; line-height: 1.4; }
         .neu-tag { color: #27ae60; font-weight: bold; }
         .update-tag { color: #e67e22; font-weight: bold; }
+        .entfernt-tag { color: #c0392b; font-weight: bold; }
+        .error { color: #c0392b; }
     </style>
 </head>
 <body>
@@ -25,12 +28,13 @@
 
     <div class="card history-card">
         <h2>🕒 Letzte Änderungen</h2>
-        <div id="history-inhalt">Suche nach Änderungen...</div>
+        <div id="history-inhalt" aria-live="polite">Suche nach Änderungen...</div>
     </div>
 
     <div class="card">
         <h2>Aktueller Bestand</h2>
-        <div id="loading">Lade Daten...</div>
+        <div id="loading" aria-live="polite">Lade Daten...</div>
+        <button id="erneut-laden" type="button" hidden>Erneut laden</button>
         <table id="tabelle" style="display:none;">
             <thead>
                 <tr>
@@ -44,59 +48,131 @@
             </thead>
             <tbody id="inhalt"></tbody>
         </table>
-        <p class="status" id="zeitstempel"></p>
+        <p class="status" id="zeitstempel">Letzter erfolgreicher Scan: wird geladen...</p>
     </div>
 
     <script>
-    // 1. HISTORIE LADEN
-    fetch('history.json')
-        .then(res => res.json())
-        .then(historyData => {
-            const container = document.getElementById('history-inhalt');
-            if (!historyData || historyData.length === 0) {
-                container.innerText = "Noch keine Änderungen aufgezeichnet.";
-                return;
-            }
-            let html = "";
-            historyData.forEach(tag => {
-                html += `<p><strong>${tag.datum}:</strong> `;
-                
-                // NEU: Wenn es an diesem Tag keine Änderungen gab
-                if (tag.funde.length === 0) {
-                    html += `<span style="color: #7f8c8d; font-style: italic;">✅ Scan durchgeführt, keine Änderungen.</span>`;
-                } else {
-                    // Wenn es Änderungen gab
-                    tag.funde.forEach(f => {
-                        const klasse = f.typ === 'NEU' ? 'neu-tag' : 'update-tag';
-                        html += `<span class="${klasse}">[${f.typ}]</span> ${f.bezeichnung} (Nr. ${f.nr}) | `;
-                    });
-                }
-                html += `</p>`;
-            });
-            container.innerHTML = html;
-        }).catch(() => {
-            document.getElementById('history-inhalt').innerText = "Historie wird nach dem nächsten Scan verfügbar sein.";
-        });
+    const wiederholen = document.getElementById('erneut-laden');
+    const istObjekt = wert => wert !== null && typeof wert === 'object' && !Array.isArray(wert);
 
-        // 2. HAUPTDATEN LADEN
-        fetch('hagelregister_daten.json')
-            .then(res => res.json())
-            .then(data => {
-                const tbody = document.getElementById('inhalt');
-                for (const [nr, info] of Object.entries(data)) {
-                    tbody.innerHTML += `<tr>
-                        <td><strong>${nr}</strong></td>
-                        <td>${info.Bezeichnung}</td>
-                        <td class="beschreibung">${info.Beschreibung}</td>
-                        <td>${info.Gesuchsteller}</td>
-                        <td>${info.Klassierung}</td>
-                        <td>${info['Gültig bis']}</td>
-                    </tr>`;
+    async function ladeJson(datei) {
+        const antwort = await fetch(datei, { cache: 'no-store' });
+        if (!antwort.ok) throw new Error(`HTTP ${antwort.status}`);
+        return antwort.json();
+    }
+
+    function scanDatum(tag) {
+        if (tag.scan_at) {
+            const datum = new Date(tag.scan_at);
+            if (Number.isNaN(datum.getTime())) throw new Error('Ungültiger Scanzeitpunkt');
+            return datum.toLocaleString('de-CH', { timeZone: 'Europe/Zurich' }) + ' (Schweizer Zeit)';
+        }
+        // Alte Einträge besitzen keine verlässliche Zeitzoneninformation.
+        return tag.datum;
+    }
+
+    function zeigeScanzeit(tag) {
+        const status = document.getElementById('zeitstempel');
+        status.classList.remove('error');
+        if (!tag) {
+            status.textContent = 'Letzter erfolgreicher Scan: unbekannt';
+            return;
+        }
+        status.textContent = 'Letzter erfolgreicher Scan: ' + scanDatum(tag);
+        // Die Zeitzone historischer Einträge ist unbekannt; Alter nur für ISO-Zeitstempel prüfen.
+        if (tag.scan_at && Date.now() - new Date(tag.scan_at).getTime() > 48 * 60 * 60 * 1000) {
+            status.textContent += ' — Achtung: Daten sind älter als 48 Stunden.';
+            status.classList.add('error');
+        }
+    }
+
+    async function ladeHistorie() {
+        const container = document.getElementById('history-inhalt');
+        try {
+            const historie = await ladeJson('history.json');
+            if (!Array.isArray(historie) || historie.some(tag =>
+                !istObjekt(tag) || typeof tag.datum !== 'string' || !Array.isArray(tag.funde)
+                || (tag.scan_at !== undefined && (typeof tag.scan_at !== 'string' || Number.isNaN(new Date(tag.scan_at).getTime())))
+                || tag.funde.some(fund => !istObjekt(fund) || typeof fund.nr !== 'string'
+                    || typeof fund.bezeichnung !== 'string' || !['NEU', 'UPDATE', 'ENTFERNT'].includes(fund.typ))
+            )) throw new Error('Ungültiges Historienformat');
+            const inhalt = document.createDocumentFragment();
+            for (const tag of historie) {
+                const absatz = document.createElement('p');
+                const datum = document.createElement('strong');
+                datum.textContent = scanDatum(tag) + ': ';
+                absatz.append(datum);
+                if (tag.funde.length === 0) {
+                    absatz.append(document.createTextNode('✅ Scan durchgeführt, keine Änderungen.'));
                 }
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('tabelle').style.display = 'table';
-                document.getElementById('zeitstempel').innerText = 'Letzter Scan: ' + new Date().toLocaleString();
-            });
+                for (const fund of tag.funde) {
+                    const kennzeichen = document.createElement('span');
+                    kennzeichen.className = { NEU: 'neu-tag', UPDATE: 'update-tag', ENTFERNT: 'entfernt-tag' }[fund.typ];
+                    kennzeichen.textContent = `[${fund.typ}]`;
+                    absatz.append(kennzeichen, document.createTextNode(` ${fund.bezeichnung} (Nr. ${fund.nr}) | `));
+                }
+                inhalt.append(absatz);
+            }
+            container.classList.remove('error');
+            container.replaceChildren(inhalt);
+            if (historie.length === 0) container.textContent = 'Noch keine Änderungen aufgezeichnet.';
+            zeigeScanzeit(historie[0]);
+        } catch (fehler) {
+            container.textContent = 'Die Historie konnte nicht geladen werden. Bitte erneut versuchen.';
+            container.classList.add('error');
+            zeigeScanzeit(null);
+            wiederholen.hidden = false;
+        }
+    }
+
+    async function ladeBestand() {
+        const laden = document.getElementById('loading');
+        const tabelle = document.getElementById('tabelle');
+        laden.textContent = 'Lade Daten...';
+        laden.classList.remove('error');
+        laden.style.display = 'block';
+        tabelle.style.display = 'none';
+        try {
+            const daten = await ladeJson('hagelregister_daten.json');
+            const felder = ['Bezeichnung', 'Beschreibung', 'Gesuchsteller', 'Klassierung', 'Gültig bis'];
+            if (!istObjekt(daten) || Object.values(daten).some(info =>
+                !istObjekt(info) || felder.some(feld => typeof info[feld] !== 'string')
+            )) throw new Error('Ungültiges Datenformat');
+            const zeilen = document.createDocumentFragment();
+            for (const [nr, info] of Object.entries(daten)) {
+                const zeile = document.createElement('tr');
+                for (const [index, wert] of [nr, ...felder.map(feld => info[feld])].entries()) {
+                    const zelle = document.createElement('td');
+                    if (index === 0) {
+                        const nummer = document.createElement('strong');
+                        nummer.textContent = wert;
+                        zelle.append(nummer);
+                    } else {
+                        zelle.textContent = wert;
+                    }
+                    if (index === 2) zelle.className = 'beschreibung';
+                    zeile.append(zelle);
+                }
+                zeilen.append(zeile);
+            }
+            document.getElementById('inhalt').replaceChildren(zeilen);
+            laden.style.display = 'none';
+            tabelle.style.display = 'table';
+        } catch (fehler) {
+            laden.textContent = 'Der Bestand konnte nicht geladen werden. Bitte erneut versuchen.';
+            laden.classList.add('error');
+            wiederholen.hidden = false;
+        }
+    }
+
+    async function ladeAlles() {
+        wiederholen.hidden = true;
+        wiederholen.disabled = true;
+        await Promise.all([ladeHistorie(), ladeBestand()]);
+        wiederholen.disabled = false;
+    }
+    wiederholen.addEventListener('click', ladeAlles);
+    ladeAlles();
     </script>
 </body>
 </html>
