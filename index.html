@@ -65,7 +65,7 @@
         if (tag.scan_at) {
             const datum = new Date(tag.scan_at);
             if (Number.isNaN(datum.getTime())) throw new Error('Ungültiger Scanzeitpunkt');
-            return datum.toLocaleString('de-CH', { timeZone: 'Europe/Zurich' }) + ' (Schweizer Zeit)';
+            return datum.toLocaleString('de-CH', { timeZone: 'Europe/Zurich' });
         }
         // Alte Einträge besitzen keine verlässliche Zeitzoneninformation.
         return tag.datum;

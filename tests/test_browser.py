@@ -93,7 +93,6 @@ class DashboardTests(unittest.IsolatedAsyncioTestCase):
         await self.open()
         text = await self.page.locator("#zeitstempel").inner_text()
         self.assertIn("14:00", text)
-        self.assertIn("Schweizer Zeit", text)
         self.assertIn("älter als 48 Stunden", text)
 
     async def test_recent_scan_does_not_warn(self):
