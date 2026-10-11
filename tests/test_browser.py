@@ -7,6 +7,7 @@ import unittest
 from datetime import datetime, timezone
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 from playwright.async_api import async_playwright
 
@@ -49,13 +50,31 @@ class DashboardTests(unittest.IsolatedAsyncioTestCase):
         await self.page.wait_for_function("!document.getElementById('erneut-laden').disabled")
         self.assertEqual(self.errors, [])
 
-    async def test_existing_data_and_legacy_scan_timestamp(self):
+    async def test_existing_data_and_stored_scan_timestamp(self):
         self.data = json.loads((ROOT / "hagelregister_daten.json").read_text())
         self.history = json.loads((ROOT / "history.json").read_text())
         await self.open()
         self.assertEqual(await self.page.locator("#inhalt tr").count(), len(self.data))
         self.assertEqual(await self.page.locator("#history-inhalt p").count(), len(self.history))
-        self.assertIn(self.history[0]["datum"], await self.page.locator("#zeitstempel").inner_text())
+        text = await self.page.locator("#zeitstempel").inner_text()
+        latest = self.history[0]
+        if latest.get("scan_at"):
+            expected = datetime.fromisoformat(latest["scan_at"]).astimezone(ZoneInfo("Europe/Zurich"))
+            self.assertRegex(text, rf"\b0?{expected.day}\.0?{expected.month}\.{expected.year}\b")
+            self.assertIn(expected.strftime("%H:%M:%S"), text)
+        else:
+            self.assertIn(latest["datum"], text)
+
+    async def test_legacy_scan_timestamp_keeps_original_display(self):
+        await self.open()
+        self.assertEqual(
+            await self.page.locator("#zeitstempel").inner_text(),
+            "Letzter erfolgreicher Scan: 01.01.2020 12:00",
+        )
+        self.assertEqual(
+            (await self.page.locator("#history-inhalt strong").inner_text()).strip(),
+            "01.01.2020 12:00:",
+        )
 
     async def test_html_payloads_are_shown_as_text_in_both_sections(self):
         payload = '<img src="data:,invalid" onerror="window.reviewMarker=1">'
