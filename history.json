@@ -1,5 +1,26 @@
 [
     {
+        "datum": "16.10.2026 14:09",
+        "scan_at": "2026-10-16T14:09:34.638054+02:00",
+        "funde": [
+            {
+                "nr": "40829",
+                "bezeichnung": "JAM66D50-GB",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40830",
+                "bezeichnung": "JAM54D50-GR / JAM54D51-GR",
+                "typ": "UPDATE"
+            },
+            {
+                "nr": "40853",
+                "bezeichnung": "JAM48D50/51-LR",
+                "typ": "UPDATE"
+            }
+        ]
+    },
+    {
         "datum": "15.10.2026 14:30",
         "scan_at": "2026-10-15T14:30:49.088184+02:00",
         "funde": []
@@ -479,9 +500,5 @@
                 "typ": "NEU"
             }
         ]
-    },
-    {
-        "datum": "18.09.2026 12:08",
-        "funde": []
     }
 ]
