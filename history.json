@@ -1,5 +1,21 @@
 [
     {
+        "datum": "23.10.2026 14:28",
+        "scan_at": "2026-10-23T14:28:47.025893+02:00",
+        "funde": [
+            {
+                "nr": "40879",
+                "bezeichnung": "JAM54D40/LB; JAM54D40/LB Black Frame; JAM54D41/LB; JAM54D40/LR Black Frame; JAM54D41/LR; JAM48D50; JAM48D50-xxx/LR Black Frame; JAM48D51-xxx/LR; JAT54D4F-xxx/GR",
+                "typ": "NEU"
+            },
+            {
+                "nr": "40880",
+                "bezeichnung": "JAT54S40-xxx/LR; JAT54D4E-xxx/GR; JAT54D4E-xxx/GR Black Frame",
+                "typ": "NEU"
+            }
+        ]
+    },
+    {
         "datum": "22.10.2026 14:50",
         "scan_at": "2026-10-22T14:50:22.413643+02:00",
         "funde": []
@@ -495,10 +511,6 @@
     },
     {
         "datum": "26.09.2026 12:07",
-        "funde": []
-    },
-    {
-        "datum": "25.09.2026 12:38",
         "funde": []
     }
 ]

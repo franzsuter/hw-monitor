@@ -146,6 +146,20 @@
         "Gültig bis": "31.12.2031",
         "Klassierung": "Hagelwiderstand Funktionalität: HW 3"
     },
+    "40879": {
+        "Bezeichnung": "JAM54D40/LB; JAM54D40/LB Black Frame; JAM54D41/LB; JAM54D40/LR Black Frame; JAM54D41/LR; JAM48D50; JAM48D50-xxx/LR Black Frame; JAM48D51-xxx/LR; JAT54D4F-xxx/GR",
+        "Beschreibung": "Glas-Glas Photovoltaikmodul. Frontglas vorgespannt/teilvorgespannt, Stärke = 2,8 mm. Rückseitenglas vorgespannt/teilvorgespannt, Stärke = 2,0 mm. Umlaufender Rahmen aus Aluminium. xxx steht für die verschiedenen Leistungsklassen des Moduls. Die Anerkennung bezieht sich auf den solaren Teil und alle Leistungsklassen.",
+        "Gesuchsteller": "JA Solar GmbH, Bauhausplatz 4, 80807 München",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
+    },
+    "40880": {
+        "Bezeichnung": "JAT54S40-xxx/LR; JAT54D4E-xxx/GR; JAT54D4E-xxx/GR Black Frame",
+        "Beschreibung": "Glas-Folien Photovoltaikmodul. Frontglas vorgespannt/teilvorgespannt, Stärke = 2,8 mm. Rückseitenfolie. Umlaufender Rahmen aus Aluminium, Höhe = 30 mm. xxx steht für die verschiedenen Leistungsklassen des Moduls. Die Anerkennung bezieht sich auf den solaren Teil und alle Leistungsklassen.",
+        "Gesuchsteller": "JA Solar GmbH, Bauhausplatz 4, 80807 München",
+        "Gültig bis": "31.12.2031",
+        "Klassierung": "Hagelwiderstand Funktionalität: HW 4 | Hagelwiderstand Aussehen: HW 4"
+    },
     "33126": {
         "Bezeichnung": "JKM430N-54HL4R-BDV; JKM440N-54HL4R-BDV; JKM435N-54HL4R-BDV; JKM425N-54HL4R-BDV; JKM420N-54HL4R-BDV",
         "Beschreibung": "Doppelglasmodul (Glas-Glas PV-Modul). Frontglas gehärtet, Stärke = 1,6 mm. Rückseitenglas gehärtet, Stärke = 1,6 mm. Umlaufender Rahmen aus Aluminium, Höhe = 30 mm. Die Anerkennung bezieht sich auf den solaren Teil und den Rahmen.",
